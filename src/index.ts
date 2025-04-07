@@ -13,7 +13,7 @@
 
 export default {
   async fetch(request, env, ctx) {
-    // (1) PUTメソッドとContent-Typeをチェック
+    // (1) メソッドとContent-Typeをチェック
     if (request.method !== 'POST') {
       return new Response('Method Not Allowed', { status: 405 });
     }
